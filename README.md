@@ -12,7 +12,80 @@ Compare the gpt and co-pilot
 
 ### GPT Prompt 
 
-////write efficient code to write 100 TB  volumes of records from excel  to database using c# chat gpt
+//write efficient code to write 100 TB  volumes of records from excel  to database using c# chat gpt
+  ```
+  using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using ExcelDataReader;
+
+public class DatabaseWriter
+{
+    private const string ConnectionString = "your_connection_string_here";
+
+    public static void Main()
+    {
+        try
+        {
+            string excelFilePath = "path_to_excel_file.xlsx";
+            WriteRecordsToDatabase(excelFilePath);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("An error occurred: " + e.Message);
+        }
+    }
+
+    public static void WriteRecordsToDatabase(string filePath)
+    {
+        using (SqlConnection connection = new SqlConnection(ConnectionString))
+        {
+            connection.Open();
+
+            using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+            {
+                using (var reader = ExcelReaderFactory.CreateReader(stream))
+                {
+                    // SkipHeaders indicates whether to skip the first row containing headers
+                    bool skipHeaders = true;
+
+                    // BatchSize represents the number of records to process in each batch
+                    int batchSize = 1000;
+
+                    // Read the records in chunks/batches
+                    do
+                    {
+                        DataTable dataTable = new DataTable();
+                        dataTable.Load(reader);
+
+                        if (skipHeaders)
+                        {
+                            skipHeaders = false;
+                            continue;
+                        }
+
+                        // Write the records to the database using SqlBulkCopy
+                        using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection))
+                        {
+                            bulkCopy.DestinationTableName = "YourDestinationTableName";
+                            bulkCopy.BatchSize = batchSize;
+
+                            bulkCopy.WriteToServer(dataTable);
+                        }
+
+                    } while (reader.NextResult()); // Move to the next sheet if any
+                }
+            }
+        }
+    }
+}
+
+  ```
+//write efficient code to write 100 TB  volumes of records from excel  to database using c#
+
+No code which suggested some best practises
+
 //Generate an array of all the colors from the rainbow  and print out the colors  consider time and space complexity
 
 ### GPT Code
