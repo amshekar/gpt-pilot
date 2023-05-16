@@ -2,12 +2,17 @@
 Compare the gpt and co-pilot
 
 
-| Aspects | co-pilot & Lab| chatgpt |
-| :---         |     :---:      |          ---: |
-| code generation | 6    | 7   |
-| Iterative code generation/refinement    | 6      | 9      |
-| Other- Learning curve     | 1      | 9      |
+| Aspects | co-pilot | chatgpt | co-pilot & Lab |
+| :---         |     :---:      |          ---: |---: |
+| code generation | 6    | 7   | |
+| Iterative code generation/refinement    | 6      | 9      | 8 |
+| Other- Learning curve     | 2      | 9      | 6|
 
+## 1 code generation
+## 2 Iterative code generation/refinement
+## 3 Other- Learning curve
+## 4 Risks & Fun part of tools
+ 
 
 
 ### GPT Prompt 
