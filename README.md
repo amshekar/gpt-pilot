@@ -2,7 +2,7 @@
 Compare the gpt and co-pilot
 
 
-| Aspects | co-pilot| chatgpt |
+| Aspects | co-pilot & Lab| chatgpt |
 | :---         |     :---:      |          ---: |
 | code generation | 6    | 7   |
 | Iterative code generation/refinement    | 6      | 9      |
