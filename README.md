@@ -5,7 +5,7 @@
 | Aspects | co-pilot | chatgpt | co-pilot & Lab |
 | :---         |     :---:      |          ---: |---: |
 | code generation | 6    | 7   | |
-| Iterative code generation/refinement    | 4      | 9      | 8 |
+| Iterative code generation/refinement    | 4      | 8      | 8 |
 | Other- Learning curve     | 2      | 9      | 7|
 
 ## 1 code generation
