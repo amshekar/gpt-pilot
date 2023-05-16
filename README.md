@@ -11,7 +11,7 @@ Compare the gpt and co-pilot
 ## 1 code generation
 ## 2 Iterative code generation/refinement
 ## 3 Other- Learning curve
-## 4 Risks & Fun part of tools
+## 4 Crazy & Fun part of tools
  
 
 
