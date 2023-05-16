@@ -87,6 +87,38 @@ public class DatabaseWriter
 }
 
   ```
+//co-pilot
+ ```
+ //write efficient code to write 100 GB volumes of records from excel  to database using c#
+public class ExcelToDatabase
+{
+    public static void Main()
+    {
+        // Create a new instance of the ExcelToDatabase class.
+        ExcelToDatabase etd = new ExcelToDatabase();
+
+        // Create a byte array to hold the random value.
+        byte[] randomValue = new byte[8];
+
+        // Create a new instance of the RNGCryptoServiceProvider class
+        // and fill the array with a random value.
+        RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
+        rng.GetBytes(randomValue);
+
+        // Display the bytes.
+        etd.DisplayBytes(randomValue);
+    }
+
+    public void DisplayBytes(byte[] bytes)
+    {
+        foreach (byte byteValue in bytes)
+        {
+            Console.Write("{0:X} ", byteValue);
+        }
+        Console.WriteLine();
+    }
+}
+ ```
 //write efficient code to write 100 TB  volumes of records from excel  to database using c#
 
 No code which suggested some best practises
