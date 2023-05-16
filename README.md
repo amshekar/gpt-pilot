@@ -1,6 +1,15 @@
 # gpt-pilot
 Compare the gpt and co-pilot
 
+
+| Aspects | co-pilot| chatgpt |
+| :---         |     :---:      |          ---: |
+| code generation | 6    | 7   |
+| Iterative code generation/refinement    | 6      | 9      |
+| Other- Learning curve     | 1      | 9      |
+
+
+
 ### GPT Prompt 
 //Generate an array of all the colors from the rainbow  and print out the colors  consider time and space complexity
 
