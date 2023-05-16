@@ -6,7 +6,7 @@
 | :---         |     :---:      |          ---: |---: |
 | code generation | 6    | 7   | |
 | Iterative code generation/refinement    | 4      | 9      | 8 |
-| Other- Learning curve     | 2      | 9      | 6|
+| Other- Learning curve     | 2      | 9      | 7|
 
 ## 1 code generation
 ## 2 Iterative code generation/refinement
