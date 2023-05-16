@@ -11,6 +11,8 @@ Compare the gpt and co-pilot
 
 
 ### GPT Prompt 
+
+////write efficient code to write 100 TB  volumes of records from excel  to database using c# chat gpt
 //Generate an array of all the colors from the rainbow  and print out the colors  consider time and space complexity
 
 ### GPT Code
