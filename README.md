@@ -1,5 +1,5 @@
 # gpt-pilot
- the gpt Vs co-pilot
+## the gpt Vs co-pilot
 
 
 | Aspects | co-pilot | chatgpt | co-pilot & Lab |
