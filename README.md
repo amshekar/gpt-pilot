@@ -17,7 +17,7 @@
 
 ### GPT Prompt 
 
-//write efficient code to write 100 TB  volumes of records from excel  to database using c# chat gpt
+//write efficient code to write 100 GB  volumes of records from excel  to database using c# chat gpt
   ```
   using System;
 using System.Data;
